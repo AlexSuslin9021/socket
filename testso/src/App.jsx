@@ -11,12 +11,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
  <Routes>
      <Route path={'/'} element={<Home socket={socket}/>} />
      <Route path={'/chat'} element={<Chat socket={socket}/>} />
  </Routes>
-    </>
+    </div>
   )
 }
 
