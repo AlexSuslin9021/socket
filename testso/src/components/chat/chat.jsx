@@ -15,7 +15,7 @@ const Chat = ({socket}) => {
         [messages, socket])
     return (
         <div className={s.chat}>
-        <Sidebar/>
+        <Sidebar socket={socket}/>
             <div >
                 <Body messages={messages}/>
                 <Messege socket={socket}/>
