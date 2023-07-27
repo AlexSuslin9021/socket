@@ -12,7 +12,7 @@ const Chat = ({socket}) => {
             setMessages([...messages, data])
         })
         },
-        [messages])
+        [messages, socket])
     return (
         <div className={s.chat}>
         <Sidebar/>

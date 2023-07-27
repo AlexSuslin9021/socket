@@ -21,15 +21,15 @@ const Body = ({messages}) => {
                 {
                     messages.map(el => {
                         if (el.name === localStorage.getItem('user')) {
-                            return <div className={s.i}>
+                            return <div key={el.id} className={s.i}>
                                 <span>I</span>
-                                <p>hello</p>
+                                <p>{el.text}</p>
 
                             </div>
                         } else {
                             return <div className={s.friend}>
-                                <span>friend</span>
-                                <p>hello</p>
+                                <span>{el.name}</span>
+                                <p>{el.text}</p>
                             </div>
                         }
                     })

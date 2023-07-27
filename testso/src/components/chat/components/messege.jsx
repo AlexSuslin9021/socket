@@ -7,9 +7,9 @@ const Messege = ({socket}) => {
         e.preventDefault()
       if(messsege.trim() && localStorage.getItem('user')){
           socket.emit('message',{
-              test:messsege,
+              text:messsege,
               name:localStorage.getItem('user'),
-              id:`${socket.id}`,
+              id:`${socket.id}- ${Math.random()}`,
               socketId:socket.id
           })
       }
