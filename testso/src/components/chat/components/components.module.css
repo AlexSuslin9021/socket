@@ -1,0 +1,36 @@
+.body{
+  height: 90%;
+    border-bottom: 1px solid white ;
+  width: 90vw;
+}
+.header{
+  height: 50px;
+  border-bottom: 1px solid white;
+  text-align: end;
+  padding-right: 50px;
+}
+.i{
+display: flex;
+  width: 100%;
+  justify-content: end;
+
+}
+.i p{
+  background: #646cff;
+  padding: 10px;
+  border-radius: 5px;
+
+
+}
+
+.friend{
+  display: flex;
+  width: 100%;
+
+}
+.friend p{
+  background: lightgreen;
+padding: 10px;
+  border-radius: 5px;
+
+}

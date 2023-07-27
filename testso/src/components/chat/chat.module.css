@@ -1,0 +1,36 @@
+.chat{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+
+}
+.header{
+    margin-bottom: 50px;
+
+}
+.sidebar{
+border-right: 1px solid white;
+    height: 100vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.user{
+list-style-type: none;
+font-weight: bold;
+    color: lightgray;
+}
+.user:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+}
+
