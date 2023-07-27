@@ -18,6 +18,9 @@ app.get('api', (req, res) => {
 
 io.on('connection', (socket) => {
     console.log(`${socket.id} user connected`);
+    socket.on('message',(data)=>{
+        io.emit('response', data)
+    })
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
