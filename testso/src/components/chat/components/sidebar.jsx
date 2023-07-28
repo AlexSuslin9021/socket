@@ -19,7 +19,7 @@ const Sidebar = ({socket}) => {
         <div className={s.sidebar} >
             <h4 className={s.header}>Users</h4>
             <ul>
-                {filterUsers.map((el,index)=><li key={el.socketId} className={s.user}>{el.user}</li>)}
+                {filterUsers.map((el)=><li key={el.socketId} className={s.user}>{el.user}</li>)}
                 <li className={s.user}>Alex</li>
                 <li className={s.user}>Dima</li>
                 <li className={s.user}>Juli</li>
