@@ -8,7 +8,7 @@ import Chat from "./components/chat/chat.jsx";
 const socket = io('http://localhost:3009')
 
 function App() {
-    const [count, setCount] = useState(0)
+
 
     return (
         <div>
